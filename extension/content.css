@@ -1,0 +1,95 @@
+#tubelens-root {
+  position: fixed;
+  top: 88px;
+  right: 16px;
+  z-index: 2147483646;
+  width: 300px;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  color: #f3f6fb;
+}
+
+#tubelens-root .tl-panel {
+  border-radius: 22px;
+  background: linear-gradient(180deg, #152033, #0b1220);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  padding: 14px;
+}
+
+#tubelens-root .tl-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+#tubelens-root .tl-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: #f5a524;
+  color: #0b1220;
+  font-weight: 800;
+}
+
+#tubelens-root .tl-sub {
+  font-size: 11px;
+  color: rgba(243, 246, 251, 0.55);
+}
+
+#tubelens-root .tl-close {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: rgba(243, 246, 251, 0.7);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#tubelens-root .tl-score {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+#tubelens-root .tl-score-num {
+  font-size: 34px;
+  font-weight: 800;
+  color: #f5a524;
+  line-height: 1;
+}
+
+#tubelens-root .tl-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(243, 246, 251, 0.5);
+}
+
+#tubelens-root .tl-kw {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+#tubelens-root .tl-list {
+  margin: 12px 0;
+  padding-left: 18px;
+  color: rgba(243, 246, 251, 0.78);
+  font-size: 12px;
+}
+
+#tubelens-root .tl-cta {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #f5a524;
+  color: #0b1220;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 10px 12px;
+}

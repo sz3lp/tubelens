@@ -1,0 +1,111 @@
+import type { CompetitorRecord } from "@/lib/types";
+
+export const COMPETITORS: CompetitorRecord[] = [
+  {
+    id: "comp-1",
+    name: "Signal Stack",
+    handle: "@signalstack",
+    subscribers: 482000,
+    avgViews: 86000,
+    uploadFrequency: "3x / week",
+    niche: "YouTube Growth",
+    topTopics: ["algorithm breakdowns", "thumbnail tests", "case studies"],
+    recentTitles: [
+      "I Fixed a Dead Channel in 30 Days (Data)",
+      "The Thumbnail Rule Nobody Talks About",
+      "YouTube SEO Is Broken — Here's What Works",
+    ],
+    strengths: ["data storytelling", "consistent packaging system", "series retention"],
+    gaps: ["weak Shorts strategy", "few beginner onboarding videos"],
+  },
+  {
+    id: "comp-2",
+    name: "Circuit Desk",
+    handle: "@circuitdesk",
+    subscribers: 910000,
+    avgViews: 210000,
+    uploadFrequency: "2x / week",
+    niche: "Tech Reviews",
+    topTopics: ["budget gear", "camera tests", "creator setups"],
+    recentTitles: [
+      "I Tested 9 Creator Mics So You Don't Have To",
+      "The $400 Setup That Looks Like $4,000",
+      "Stop Buying This Camera in 2026",
+    ],
+    strengths: ["comparison matrices", "high CTR faces", "affiliate trust"],
+    gaps: ["long-form depth under 12 min", "limited software reviews"],
+  },
+  {
+    id: "comp-3",
+    name: "Plate Theory",
+    handle: "@platetheory",
+    subscribers: 327000,
+    avgViews: 54000,
+    uploadFrequency: "weekly",
+    niche: "Food & Health",
+    topTopics: ["meal prep", "high protein", "budget cooking"],
+    recentTitles: [
+      "7 High-Protein Meals Under $3",
+      "Sunday Prep That Actually Lasts",
+      "Cooking for One Without Getting Bored",
+    ],
+    strengths: ["clear recipes", "Shorts clips from long-form", "community comments"],
+    gaps: ["slow upload cadence", "weak search titles"],
+  },
+  {
+    id: "comp-4",
+    name: "Ledger Lane",
+    handle: "@ledgerlane",
+    subscribers: 615000,
+    avgViews: 120000,
+    uploadFrequency: "2x / week",
+    niche: "Finance",
+    topTopics: ["gen z money", "investing basics", "banking products"],
+    recentTitles: [
+      "The Exact Budget I Use at 27",
+      "High Yield Savings — What Banks Hide",
+      "Roth IRA in Plain English",
+    ],
+    strengths: ["plain-language scripts", "trustable tone", "chapter structure"],
+    gaps: ["thin advanced investing content", "few reaction/news videos"],
+  },
+  {
+    id: "comp-5",
+    name: "Frame North",
+    handle: "@framenorth",
+    subscribers: 198000,
+    avgViews: 41000,
+    uploadFrequency: "weekly",
+    niche: "Photography",
+    topTopics: ["street photography", "composition", "budget lenses"],
+    recentTitles: [
+      "Street Photography Rules I Break On Purpose",
+      "One Lens for 30 Days Challenge",
+      "How I Edit Night Streets Fast",
+    ],
+    strengths: ["visual proof", "challenge formats", "niche authority"],
+    gaps: ["inconsistent SEO", "underuses playlists"],
+  },
+  {
+    id: "comp-6",
+    name: "Buildpath",
+    handle: "@buildpath",
+    subscribers: 740000,
+    avgViews: 155000,
+    uploadFrequency: "3x / week",
+    niche: "Education",
+    topTopics: ["python projects", "career roadmaps", "study systems"],
+    recentTitles: [
+      "Build 5 Python Projects From Scratch",
+      "The Study System That Got Me Hired",
+      "Stop Watching Tutorials — Do This Instead",
+    ],
+    strengths: ["project series", "contrarian hooks", "strong end screens"],
+    gaps: ["beginner overwhelm", "few Shorts hooks"],
+  },
+];
+
+export function listCompetitors(niche?: string): CompetitorRecord[] {
+  if (!niche || niche === "All") return COMPETITORS;
+  return COMPETITORS.filter((c) => c.niche === niche);
+}
